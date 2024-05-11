@@ -2,7 +2,16 @@
 const nextConfig = {
     // Sass support
     sassOptions: {
-        includePaths: ['./src/styles'],
+        includePaths: ['./src'],
+    },
+    webpack: (config, { isServer }) => {
+        if (!isServer) {
+            config.watchOptions = {
+                poll: 1000,
+                aggregateTimeout: 300
+            }
+        }
+        return config;
     }
 };
 

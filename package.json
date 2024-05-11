@@ -10,7 +10,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@apollo/client": "^3.9.10",
+        "@apollo/client": "^3.10.3",
         "graphql": "^16.8.1",
         "next": "14.1.4",
         "pouchdb-browser": "^8.0.1",
