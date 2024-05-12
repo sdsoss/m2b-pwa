@@ -1,5 +1,7 @@
 import { gql } from '@apollo/client';
 
+import { useMutation } from '@apollo/client';
+
 export const GET_PAGES = gql`
     query GetPages {
         getPages {

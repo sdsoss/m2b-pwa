@@ -26,11 +26,11 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <ApolloProvider client={apolloClient}>
-                        <Header />
-                        <Sidebar />
-                        <div className={"content"}>
-                            {children}
-                        </div>
+                    <Header />
+                    <Sidebar />
+                    <div className={"content"}>
+                        {children}
+                    </div>
                 </ApolloProvider>
             </body>
         </html>
